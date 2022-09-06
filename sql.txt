@@ -1,0 +1,44 @@
+CREATE DATABASE kisanunnati
+USE kisanunnati
+CREATE TABLE `kisanunnati`.`registration` (`username` VARCHAR(200) NOT NULL , `email` VARCHAR(200) NOT NULL , `number` VARCHAR(200) NOT NULL , `password` VARCHAR(200) NOT NULL ) ENGINE = InnoDB;
+CREATE TABLE `kisanunnati`.`cart` (`user_id` int(5) , `item_id` int(5)) 
+CREATE TABLE `kisanunnati`.`product` (`item_id` INT(5) NOT NULL , `item_brand` VARCHAR(100) NOT NULL , `item_name` VARCHAR(100) NOT NULL , `item_price` VARCHAR(100) NOT NULL , `item_image` VARCHAR(200) NOT NULL , `item_register` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ) ENGINE = InnoDB;
+
+INSERT INTO `product` (`item_id`, `item_brand`, `item_name`, `item_price`, `item_image`, `item_register`) VALUES 
+('1', 'Fruits', 'Apple', '150.00/KG', './assets/products/Fruits/Apple.png', CURRENT_TIMESTAMP()), 
+('2', 'Fruits', 'Banana', '50.00/KG', './assets/products/Fruits/Banana.png', CURRENT_TIMESTAMP()),
+('3', 'Fruits', 'Custardapple', '120.00/KG', './assets/products/Fruits/Custardapple.png', CURRENT_TIMESTAMP()),
+('4', 'Vegetables', 'Bottelgourd', '40.00/KG', './assets/products/Vegetables/Bottelgourd.png', CURRENT_TIMESTAMP()), 
+('5', 'Vegetables', 'Cabbage', '35.00/KG', './assets/products/Vegetables/Cabbage.png', CURRENT_TIMESTAMP()), 
+('6', 'Vegetables', 'Carrot', '40.00/KG', './assets/products/Vegetables/Carrot.png', CURRENT_TIMESTAMP()), 
+('7', 'Grains', 'Amaranth', '40.00/KG', './assets/products/Grains/Amaranth.png', CURRENT_TIMESTAMP()), 
+('8', 'Grains', 'Bajra', '45.00/KG', './assets/products/Grains/Bajra.png', CURRENT_TIMESTAMP()), 
+('9', 'Grains', 'Barley', '40.00/KG', './assets/products/Grains/Barley.png', CURRENT_TIMESTAMP()), 
+('10', 'Fruits', 'Grapes', '130.00/KG', './assets/products/Fruits/Grapes.png', CURRENT_TIMESTAMP()), 
+('11', 'Fruits', 'Guava', '30.00/KG', './assets/products/Fruits/Guava.png', CURRENT_TIMESTAMP()), 
+('12', 'Fruits', 'Mango', '100.00/KG', './assets/products/Fruits/Mango.png', CURRENT_TIMESTAMP()),
+('13', 'Vegetables', 'Cauliflower', '35.00/KG', './assets/products/Vegetables/Cauliflower.png', CURRENT_TIMESTAMP()), 
+('14', 'Vegetables', 'Corianderleafs', '25.00/KG', './assets/products/Vegetables/Corianderleafs.png', CURRENT_TIMESTAMP()), 
+('15', 'Vegetables', 'Cucumber', '30.00/KG', './assets/products/Vegetables/Cucumber.png', CURRENT_TIMESTAMP()), 
+('16', 'Grains', 'Brownrice', '35.00/KG', './assets/products/Grains/Brownrice.png', CURRENT_TIMESTAMP()), 
+('17', 'Grains', 'Buckwheat', '40.00/KG', './assets/products/Grains/Buckwheat.png', CURRENT_TIMESTAMP()), 
+('18', 'Grains', 'Corn', '30.00/KG', './assets/products/Grains/Corn.png', CURRENT_TIMESTAMP()), 
+('19', 'Fruits', 'Mangopickel', '40.00/KG', './assets/products/Fruits/Mangopickel.png', CURRENT_TIMESTAMP()), 
+('20', 'Fruits', 'Muskmelon', '50.00/KG', './assets/products/Fruits/Muskmelon.png', CURRENT_TIMESTAMP()), 
+('21', 'Fruits', 'Orange', '80.00/KG', './assets/products/Fruits/Orange.png', CURRENT_TIMESTAMP()), 
+('22', 'Vegetables', 'Garlic', '35.00/KG', './assets/products/Vegetables/Garlic.png', CURRENT_TIMESTAMP()), 
+('23', 'Vegetables', 'Ginger', '40.00/KG', './assets/products/Vegetables/Ginger.png', CURRENT_TIMESTAMP()), 
+('24', 'Vegetables', 'Greenchillies', '35.00/KG', './assets/products/Vegetables/Greenchillies.png', CURRENT_TIMESTAMP()), 
+('25', 'Grains', 'Flexseeds', '35.00/KG', './assets/products/Grains/Flexseeds.png', CURRENT_TIMESTAMP()), 
+('26', 'Grains', 'Oats', '30.00/KG', './assets/products/Grains/Oats.png', CURRENT_TIMESTAMP()), 
+('27', 'Grains', 'Ragi', '35.00/KG', './assets/products/Grains/Ragi.png', CURRENT_TIMESTAMP()),
+('28', 'Fruits', 'Papaya', '60.00/KG', './assets/products/Fruits/Papaya.png', CURRENT_TIMESTAMP()), 
+('29', 'Fruits', 'Peach', '80.00/KG', './assets/products/Fruits/Peach.png', CURRENT_TIMESTAMP()), 
+('30', 'Fruits', 'Pineapple', '70.00/KG', './assets/products/Fruits/Pineapple.png', CURRENT_TIMESTAMP()),
+('31', 'Vegetables', 'Jackfruit', '35.00/KG', './assets/products/Vegetables/Jackfruit.png', CURRENT_TIMESTAMP()), 
+('32', 'Vegetables', 'Ladyfinger', '45.00/KG', './assets/products/Vegetables/Ladyfinger.png', CURRENT_TIMESTAMP()), 
+('33', 'Vegetables', 'Lemon', '30.00/KG', './assets/products/Vegetables/Lemon.png', CURRENT_TIMESTAMP()),
+('34', 'Grains', 'Rice', '60.00/KG', './assets/products/Grains/Rice.png', CURRENT_TIMESTAMP()), 
+('35', 'Grains', 'Sunflowerseed', '40.00/KG', './assets/products/Grains/Sunflowerseed.png', CURRENT_TIMESTAMP()), 
+('36', 'Grains', 'Wheat', '35.00/KG', './assets/products/Grains/Wheat.png', CURRENT_TIMESTAMP())
+
